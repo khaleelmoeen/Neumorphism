@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Neumorphism</title>
+</head>
+
+<body>
+
+    <input type="color" value="#b7d0e0" class="colorInput" id="colorInput">
+    <div class="container">
+        <div class="squerOne"></div>
+        <div class="squerTwo"></div>
+        <div class="circle"></div>
+    </div>
+    <script>
+        function coloring() {
+            let color = document.getElementById('colorInput').value;
+            document.body.style.backgroundColor = color;
+        }
+        document.getElementById('colorInput').addEventListener('input', coloring)
+
+    </script>
+</body>
+
+</html>
